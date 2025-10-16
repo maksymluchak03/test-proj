@@ -1,4 +1,4 @@
-# Welcome to your TEST app 👋
+# Welcome to TEST app 👋
 
 ## Get started
 
