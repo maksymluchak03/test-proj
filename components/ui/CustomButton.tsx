@@ -11,11 +11,13 @@ export default function CustomButton({
   onPress,
   touchableOpacityProps,
   variant = "primary",
+  disabled = false,
 }: {
   title: string;
   onPress: () => void;
   touchableOpacityProps?: TouchableOpacityProps;
   variant?: "primary" | "secondary";
+  disabled?: boolean;
 }) {
   const buttonContainerStyle = useMemo(() => {
     return variant === "primary"
@@ -33,7 +35,8 @@ export default function CustomButton({
     <TouchableOpacity
       {...touchableOpacityProps}
       onPress={onPress}
-      style={buttonContainerStyle}
+      style={[buttonContainerStyle, disabled && styles.disabledButton]}
+      disabled={disabled}
     >
       <Text style={buttonTextStyle}>{title}</Text>
     </TouchableOpacity>
@@ -71,4 +74,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  disabledButton: {
+    opacity: 0.5,
+  }
 });
