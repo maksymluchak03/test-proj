@@ -42,6 +42,9 @@ Tech stack:
 - Axios
 - TanStack Query
 
+### API link
+https://www.themoviedb.org/
+
 ### Opportunity for improvement
 
 First of all, I would work on color schemes for different phone themes, as this should be done at the beginning of the project implementation.
