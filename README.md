@@ -42,7 +42,12 @@ Tech stack:
 - Axios
 - TanStack Query
 
-In the output, you'll find options to open the app in a
+### Opportunity for improvement
+
+First of all, I would work on color schemes for different phone themes, as this should be done at the beginning of the project implementation.
+I would also make the implementation a little cleaner and more readable.
+I would go through the code and remove any logic or constants that might be duplicated somewhere.
+I would also implement Google OAuth2.
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
