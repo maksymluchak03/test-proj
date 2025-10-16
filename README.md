@@ -2,23 +2,31 @@
 
 ## Get started
 
-1. Install dependencies
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Set up environment variables:
 
-   ```bash
-   npx expo start
+   Create a .env file in the project root:
+
+   ```env
+   TMDB_TOKEN=your_tmdb_api_token
+   BASE_URL=base_url
    ```
 
-3. You can log in using any valid data.
+3. Run the app:
 
-To get started, create a .env file in the root of the project and paste the necessary keys into it. You can find them out from the developer.
+### Available Scripts
+
+- `npx run expo` - start Expo
+- `npm run android` - run on Android
+- `npm run ios` - run on iOS
 
 Implemented functionality:
+
 - Movie list
 - Movie search
 - Filtering
@@ -26,6 +34,7 @@ Implemented functionality:
 - Ability to add and remove favorite movies
 
 Tech stack:
+
 - Expo
 - Zustand
 - React Hook Form
